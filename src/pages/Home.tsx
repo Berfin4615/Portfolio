@@ -6,21 +6,21 @@ import Typewriter from 'typewriter-effect';
 
 const Home = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative min-h-screen h-full w-full">
       <AnimatedBackground />
       <div className="absolute inset-0 bg-noise pointer-events-none z-0" />
 
       <motion.div className="relative z-10 flex items-center justify-center h-full px-8 md:px-16">
-        <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl w-full gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl w-full gap-12">
           <motion.img
             src={profileImage}
             alt="profile"
-            className="w-60 h-60 md:w-200 md:h-200 object-contain rounded-full"
+            className="w-60 h-60 lg:w-200 lg:h-200 object-contain rounded-full"
             initial={{ opacity: 0, filter: "blur(10px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 1.5 }}
           />
-          <div className="text-center md:text-left max-w-xl text-white">
+          <div className="text-center lg:text-left max-w-xl text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">
               <Typewriter
                 options={{
@@ -31,7 +31,7 @@ const Home = () => {
                 }}
               />
             </h1>
-            <div className="space-y-4 text-base md:text-lg text-gray-700 leading-relaxed tracking-wide">
+            <div className="space-y-4 text-base md:text-md text-gray-700 leading-relaxed tracking-wide">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

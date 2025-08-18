@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const AnimatedBackground = () => {
   return (
-    <div className="absolute inset-0 overflow-hidden z-0">
+    <div className="h-full w-full absolute inset-0 overflow-hidden z-0">
       {/* Daire 1 */}
       <motion.div
         className="absolute w-72 h-72 bg-pink-400 rounded-full opacity-30 blur-3xl"
