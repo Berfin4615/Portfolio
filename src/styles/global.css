@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.bg-noise {
+  background-image: url('/noise.avif');
+  background-repeat: repeat;
+  opacity: 0.06;
+}

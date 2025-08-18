@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Experiences from "./pages/Experiences";
 import SidebarButtonGroup from "./components/SidebarButtonGroup";
 
 function App() {
@@ -10,8 +12,9 @@ function App() {
       <SidebarButtonGroup active={activePage} onChange={setActivePage} />
 
       {activePage === "main" && <Home />}
-      {/* Diğer sayfalar da bu şekilde eklenecek:
-          {activePage === "projects" && <Projects />} */}
+      {activePage === "projects" && <Projects />} 
+      {activePage === "experiences" && <Experiences />}
+      {/* {activePage === "contact" && <Contact />}  */}
     </div>
   );
 }
