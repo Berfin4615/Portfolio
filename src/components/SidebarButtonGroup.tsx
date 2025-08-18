@@ -4,7 +4,12 @@ import meicon from '/me.svg';
 import contacticon from '/contact.svg';
 import projecticon from '/project.svg';
 
-const SidebarButtonGroup = ({ active, onChange }) => {
+type SidebarButtonGroupProps = {
+  active: string;
+  onChange: (value: string) => void;
+};
+
+const SidebarButtonGroup = ({ active, onChange }: SidebarButtonGroupProps) => {
   const buttons = [
     { id: "main", label: <img src={mainicon} alt="main" className="w-10 h-10 mx-auto" /> },
     { id: "experiences", label: <img src={meicon} alt="me" className="w-10 h-10 mx-auto" /> },
