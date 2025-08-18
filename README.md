@@ -7,7 +7,7 @@ Built with **Vite + React + TypeScript + Tailwind CSS + Framer Motion**, this si
 
 ## 🌐 Live Preview
 
-> [https://berfin4615.github.io/Portfolio/]([https://berfin4615.github.io/Portfolio/])
+> [https://berfin4615.github.io/Portfolio/](https://berfin4615.github.io/Portfolio/)
 
 ---
 
