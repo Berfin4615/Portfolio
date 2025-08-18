@@ -2,6 +2,7 @@ import { useState } from "react";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experiences from "./pages/Experiences";
+import Contact from "./pages/Contact";
 import SidebarButtonGroup from "./components/SidebarButtonGroup";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       {activePage === "main" && <Home />}
       {activePage === "projects" && <Projects />} 
       {activePage === "experiences" && <Experiences />}
-      {/* {activePage === "contact" && <Contact />}  */}
+      {activePage === "contact" && <Contact />} 
     </div>
   );
 }
